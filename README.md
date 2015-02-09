@@ -20,7 +20,7 @@
       io.sockets.emit('command.KohJS', {Command: data.Command, Values:  data.Values });
   });
 ```
-### Sending message from Koh.js
+### Sending message from Koh.js to Hydra
 ```js
   socket.on('command.KohJS.Hy', function(data){
       io.sockets.emit('command.Hydra', {Command: data.Command, Values:  data.Values });
