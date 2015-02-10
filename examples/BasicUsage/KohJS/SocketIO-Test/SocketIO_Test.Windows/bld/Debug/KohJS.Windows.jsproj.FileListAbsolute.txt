@@ -1,0 +1,15 @@
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bin\Debug\ReverseMap\resources.pri
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bin\Debug\AppxManifest.xml
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bin\Debug\KohJS.Windows.build.appxrecipe
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\priconfig.xml
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\priconfig.xml.intermediate
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\layout.resfiles
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\layout.resfiles.intermediate
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\resources.resfiles
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\resources.resfiles.intermediate
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\pri.resfiles
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\pri.resfiles.intermediate
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\qualifiers.txt
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\qualifiers.txt.intermediate
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\ProjectArchitectures.txt

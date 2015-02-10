@@ -1,0 +1,15 @@
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bin\Debug\ReverseMap\resources.pri
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bin\Debug\AppxManifest.xml
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bin\Debug\SocketIO_Test.WindowsPhone.build.appxrecipe
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\priconfig.xml
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\priconfig.xml.intermediate
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\layout.resfiles
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\layout.resfiles.intermediate
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\resources.resfiles
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\resources.resfiles.intermediate
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\pri.resfiles
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\pri.resfiles.intermediate
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\qualifiers.txt
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\qualifiers.txt.intermediate
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.WindowsPhone\bld\Debug\ProjectArchitectures.txt

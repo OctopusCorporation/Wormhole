@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>RBCARODRIGUEZCF</Machine>
+    <WindowsUser>carodriguez</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>6c41c69a-41fb-43b7-806c-237d50bce8cb</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>A5777D5AD47CFC760690F11B2B472601C94DE9FBE7A509EC7018CE7838D83351</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>6c41c69a-41fb-43b7-806c-237d50bce8cb_1.0.0.0_neutral__4383yd80yb47t</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>6c41c69a-41fb-43b7-806c-237d50bce8cb_4383yd80yb47t!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>6c41c69a-41fb-43b7-806c-237d50bce8cb</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=carodriguez</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T17:26:35.334</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2015-02-09T17:36:26.696</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T16:58:16.448</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T16:57:54.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T16:57:32.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-02-09T16:55:58.331</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Shared\img\logo.png">
+      <PackagePath>img\logo.png</PackagePath>
+      <Modified>2015-01-27T02:56:54.114</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2014-11-07T21:55:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Shared\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2015-02-09T01:21:51.505</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Shared\js\socket.io.js">
+      <PackagePath>js\socket.io.js</PackagePath>
+      <Modified>2015-02-09T01:51:09.907</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\carodriguez\documents\visual studio 2015\Projects\SocketIO-Test\SocketIO-Test\SocketIO_Test.Windows\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-02-09T17:26:35.180</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

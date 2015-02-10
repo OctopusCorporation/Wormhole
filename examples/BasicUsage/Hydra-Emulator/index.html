@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Node1 Test</title>
+    <script src="js/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/NodeHelper.js"></script>
+    <script>
+        var node = NodeHelper;
+
+        node.init();
+
+        function temperatureChanged(value){
+          node.sendTemperature(value);
+        }
+
+        function sendMessage2WinJS(){
+          var inputText = document.getElementById('message2WinJS');
+
+          node.sendMessage2WinJS(inputText.value);
+        }
+        
+    </script>
+  </head>
+  <body>
+    <img src="img/logo.png" alt="logo" height="50">
+    <h1>Raspberry Pi test (Hydra App)</h1>
+    <section>
+      <label>Send Message to WinJS App</label>
+      <input type="text" id="message2WinJS">
+      <button id="sendMessageButton" onclick="javascript: sendMessage2WinJS()">Enviar</button>
+    </section>
+    <br>
+
+    <section>
+      <label>House temperature</label>
+      <input type="range" name="temperature" min="0" max="10" onchange="javascript: temperatureChanged(this.value)">
+    </section>
+    <br>
+
+    <section>
+      <label>Led</label>
+      <img id="led" src="img/ledOn.png" alt="led">
+    </section>
+  </body>
+</html>

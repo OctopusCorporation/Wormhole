@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SocketIO_Test.Windows</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- SocketIO_Test.Windows references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+
+    <!-- Socket.io references -->
+    <script src="js/socket.io.js"></script>    
+</head>
+<body>
+    <section style="float:left; width:100%; margin-left:30px; margin-top:30px;">
+        <img src="img/logo.png" width="100" style="position:relative; float: left;"/>
+        <h1 style="position:relative; float: left; left: 27px; top:16px;">WinJS App</h1>
+    </section>
+    
+    <section style="float:left; width:100%; margin-left: 30px; margin-top:30px;">
+        <label>Message received:</label>
+        <textarea id="console"></textarea>
+        <br />
+        <label>Temperature</label>
+        <input type="range" id="temperature" name="temperature" min="0" max="10">
+        <br />
+        <label>Led</label>
+        <div id="toggleSwitch" data-win-control="WinJS.UI.ToggleSwitch" data-win-options="{ checked: true, onchange: ledChanged}"></div>
+    </section>
+    
+
+    <script>
+        var socket = null;
+        (function () {
+            
+            socket = io('http://104.46.99.38:3000/');
+
+            socket.on('connect', function () {
+                var console = document.getElementById('console');
+                console.innerHTML = 'Se conectó!!';
+            });
+
+            socket.on('Welcome', function (data) {
+                var console = document.getElementById('console');
+                console.innerHTML = data.Message;
+            });
+            
+            socket.on('command.KohJS', function (data) {
+                if (data.Command === 'temperatureChanged') {
+                    var temperatureView = document.getElementById('temperature');
+                    temperatureView.value = data.Values[0].temperatureCentigrades;
+                }
+                else if (data.Command === 'message2WinJS') {
+                    var console = document.getElementById('console');
+                    console.innerHTML = data.Values[0].Message;
+                }
+            });
+
+            socket.on('disconnect', function () { });
+            
+        })();
+
+        function ledChanged() {
+            var toggleSwitch = document.getElementById('toggleSwitch').winControl;
+            if (socket != null) {
+                if (toggleSwitch.checked == true) {
+                    socket.emit('command.KohJS.Hy', { Command: 'LedChanged', Values: [{ isOn: true }] });
+                }
+                else {
+                    socket.emit('command.KohJS.Hy', { Command: 'LedChanged', Values: [{ isOn: false }] });
+                }
+            }
+            
+        }
+
+        WinJS.Utilities.markSupportedForProcessing(ledChanged);
+
+    </script>
+</body>
+</html>
