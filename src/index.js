@@ -40,6 +40,11 @@ setInterval(function(){
         });
 }, 5000);
 
+/// Every second Wormhole send a heartbeat to Koh
+setInterval(function(){
+        io.sockets.emit('heartbeat.Wormhole.Koh', {command: 'heartbeat.Wormhole.Koh', Values[{ beat : 1 }]})
+}, 1000);
+
 
 io.sockets.on('connection', function(socket){     
 
