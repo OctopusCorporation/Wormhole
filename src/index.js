@@ -8,7 +8,9 @@ var path = require('path');
 
 var http = require('http').Server(app);
 var io = require("socket.io")(http);
+var checkInternet = require('is-online');
 var port = 3000;
+var isOnline = true;
 
 console.log('\nLibs imported');
 
@@ -22,6 +24,21 @@ app.get('/', function(req, res){
 });
 
 console.log('FrontEnd initialized');
+
+/// Check the Internet connection every 5 seconds
+setInterval(function(){
+        checkInternet(function(err, online) {
+                isOnline = online;
+
+                if (isOnline) {
+                        io.sockets.emit('message.Wormhole', {Command: 'hasInternet', Values: [{isOnline : true}]});
+                }
+                else{
+                        io.sockets.emit('message.Wormhole', {Command: 'hasNoInternet', Values: [{isOnline : false}]});
+                }
+
+        });
+}, 5000);
 
 
 io.sockets.on('connection', function(socket){     
@@ -40,6 +57,8 @@ io.sockets.on('connection', function(socket){
         socket.on('command.KohJS.Hy', function(data){
                 io.sockets.emit('command.Hydra', {Command: data.Command, Values:  data.Values });
         });
+
+
 
         /// Template for socket event
 	//socket.on('', function(data){
