@@ -2,6 +2,7 @@
  // V 0.0.0.2
 
 console.log('== Octopus Project ==');
+/// Libraries
 var express = require("express");
 var app = express();
 var path = require('path');
@@ -14,6 +15,7 @@ var isOnline = true;
 
 console.log('\nLibs imported');
 
+/// Basic configuration
 app.engine('html', require('ejs').renderFile);
 app.set("view options", {layout: false});
 
