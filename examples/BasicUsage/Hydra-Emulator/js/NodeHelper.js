@@ -1,4 +1,4 @@
-var NodeServerIP = 'http://104.46.99.38:3000/';
+var NodeServerIP = 'http://104.46.97.27:3000/';
 
 
 var NodeHelper = (function(){
@@ -14,8 +14,8 @@ var NodeHelper = (function(){
       });
 
       socket.on('command.Hydra', function(data){
-        console.log(data);
-        if (data.Command === 'LedChanged') {
+        
+        if (data.Command === 'command.LedChanged') {
           var imgSrc = "";
           if (data.Values[0].isOn) {
             imgSrc = "img/ledOn.png";
@@ -56,11 +56,11 @@ var NodeHelper = (function(){
       });
 
       this.sendTemperature = function(value){
-        socket.emit('command.Hy.KohJS', {Command: 'temperatureChanged', Values: [ {temperatureCentigrades: value} ]});
+        socket.emit('command.Hy.KohJS', {Command: 'command.TemperatureChanged', Values: [ {temperatureCentigrades: value} ]});
       };
 
       this.sendMessage2WinJS = function(value){
-        socket.emit('command.Hy.KohJS', {Command: 'message2WinJS', Values: [ {Message: value} ]});
+        socket.emit('command.Hy.KohJS', {Command: 'command.Message2WinJS', Values: [ {Message: value} ]});
       }
 
   		this.template = function (){        
