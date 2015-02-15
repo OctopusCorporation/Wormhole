@@ -2,6 +2,61 @@
 <html>
   <head>
     <title>Node1 Test</title>
+
+    <style>
+
+      @font-face{
+        font-family: "Open Sans Light";
+        src: url(fonts/OpenSans-Light.ttf);
+      }
+      @font-face{
+        font-family: "Open Sans Bold";
+        src: url(fonts/OpenSans-Bold.ttf);
+      }
+      html{
+
+      }
+      body{
+        margin: 0;
+        padding: 0;
+
+        background-color: rgb(28, 4, 11);
+
+        background-image: url(img/background.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+
+        color: #FFFFFF;
+
+        font-family: "Open Sans Light";
+      }
+      h1{
+        font-family: "Open Sans Bold";
+        text-align: center;
+        font-size: 2em;
+        padding-bottom: 40px;
+        padding-top: 10px;
+      }
+      .inner-Body{
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .content{
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      .content input{
+        width: 70%;
+      }
+      .logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+
     <script src="js/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="js/NodeHelper.js"></script>
@@ -18,29 +73,40 @@
           var inputText = document.getElementById('message2WinJS');
 
           node.sendMessage2WinJS(inputText.value);
+
+          inputText.value = "";
         }
         
     </script>
   </head>
   <body>
-    <img src="img/logo.png" alt="logo" height="50">
-    <h1>Raspberry Pi test (Hydra App)</h1>
-    <section>
-      <label>Send Message to WinJS App</label>
-      <input type="text" id="message2WinJS">
-      <button id="sendMessageButton" onclick="javascript: sendMessage2WinJS()">Enviar</button>
-    </section>
-    <br>
+    <section class="inner-Body">
+      <img src="img/logo.png" alt="logo" width="100" class="logo">
+      <h1>Hydra Emulator (Raspberry Pi)</h1>
+      <section>
+        <label>Send Message to WinJS App:</label>
+        <section class="content">
+          <input type="text" id="message2WinJS">
+          <button id="sendMessageButton" onclick="javascript: sendMessage2WinJS()">Enviar</button>
+        </section>
+        
+      </section>
+      <br>
 
-    <section>
-      <label>House temperature</label>
-      <input type="range" name="temperature" min="0" max="10" onchange="javascript: temperatureChanged(this.value)">
-    </section>
-    <br>
+      <section>
+        <label>House temperature</label>
+        <section class="content">
+          <input type="range" name="temperature" min="0" max="10" onchange="javascript: temperatureChanged(this.value)">
+        </section>
+      </section>
+      <br>
 
-    <section>
-      <label>Led</label>
-      <img id="led" src="img/ledOn.png" alt="led">
+      <section>
+        <label>Led</label>
+        <section class="content">
+          <img id="led" src="img/ledOn.png" alt="led">
+        </section>
+      </section>
     </section>
   </body>
 </html>
