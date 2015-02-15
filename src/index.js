@@ -1,5 +1,5 @@
  // Wormhole 
- // V 0.0.0.3
+ // V 0.0.0.2
 
 console.log('== Octopus Project ==');
 /// Libraries
