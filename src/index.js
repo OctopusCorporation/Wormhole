@@ -62,7 +62,7 @@ io.sockets.on('connection', function(socket){
 
         /// Command from Koh.js (WinJS) to Hydra (Python)
         socket.on('command.KohJS.Hy', function(data){
-                io.sockets.emit('command.Hydra', {Command: data.Command, Values:  data.Values });
+                io.sockets.emit('command.Hydra', JSON.stringify({Command: data.Command, Values:  data.Values }));
         });
 
 
